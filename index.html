@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Phone service and Sales</title>
+</head>
+<body>
+
+<nav>
+    <div class="titleImg">
+        <div id="homeButton">
+            <img src="img/mobileInvert.png" height="40px">
+            <p>Phone service and Sales</p>
+        </div>
+        <div id="menu-button" class="buton"><img src="img/menu.jpg" ></div>
+        
+
+    </div>
+    
+
+    <div class="menu-toggle">
+        <ul class="listaButoane">
+            <li id="salesButton">Sales</li>
+            <li id="accountButton"><i class="fa fa-user-circle" aria-hidden="true"></i></li>
+            <li id="shoppingButton"><i class="fa fa-shopping-cart" aria-hidden="true"><p class="shoppingCount">0</p></i></li>
+            <li id="aboutUsButton">About Us</li>
+        </ul>
+        
+    </div>
+   
+   
+</nav>
+
+
+<div class="sections">
+
+    <section class="unu">
+        <div class="fistDiv">
+            <img src="img/screen.webp">
+            <p>SCREEN</p>
+        </div>
+
+        <div class="fistDiv">
+            <img src="img/charging.webp">
+            <p>CHARGING PORT / HEADPHONE JACK</p>
+        </div>
+
+        <div class="fistDiv">
+            <img src="img/battery.webp">
+            <p>BATTERY</p>
+        </div>
+
+        <div class="fistDiv">
+            <img src="img/home-button.webp">
+            <p>HOME BUTTON</p>
+        </div>
+
+        <div class="fistDiv">
+            <img src="img/camera.webp">
+            <p>CAMERA</p>
+        </div>
+
+        <div class="fistDiv">
+            <img src="img/speaker.webp">
+            <p>SPEAKER</p>
+        </div>
+    </section>
+
+    <div class="infoDiv"><a href="#">Go down for more information
+     <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+    </div>
+
+    <section class="doi">
+        <div class="middleDiv">
+            <img src="img/ip13 frame.png">
+        </div>
+        <p> <b>Screen Replacements</b> <br><br>
+            Looking for a new replacement LCD screen or a glass touch digitizer screen to repair your cellphone's or tablet's broken screen?
+            We fix cracked, shattered, smashed and other damaged cellphone touch glass and LCD screens.</p>
+        
+    </section>
+
+    <section class="trei">
+        <div class="middleDiv1">
+            <img src="img/batteryReplacement.png">
+        </div>
+        <p> <b>Battery Replacements</b> <br><br>
+            We have all kinds of high capacity replacement batteries for dozens of cellphones and smartphones.
+            Our battery replacement parts are the best quality, factory-tested, 100% guaranteed batteries.</p>
+        
+    </section>
+
+    <section class="patru">
+        <div class="middleDiv2">
+            <img src="img/chargingPort.png">
+        </div>
+        <p> <b>Charging Port Replacements</b> <br><br>
+            We carry charging port replacements for various smartphones like iPhone, HTC, Motorola, and Samsung.
+            Easily repair the damaged one with the help our our repair department and get your phone working like new again.</p>
+        
+    </section>
+
+    <section class="cinci">
+        <div class="middleDiv3">
+            <img src="img/cameraPhoto.png">
+        </div>
+        <p> <b>Small Parts</b><br><br>
+            We have all kinds of cameras, speakers, home buttons, brackets, sensors, antenna, gaskets, flex cables, covers,
+             for your devices. We easily fix and replace these small parts.</p>
+        
+    </section>
+
+   
+    </section>
+    <div class="infoDiv">
+        <h1>For more information contact us.</h1>
+    </div>
+</div>
+
+
+<div class="phonePage">
+        <div class="phoneBrands">
+            
+        </div>
+
+        <div id="scrollToMe" class="phoneDivs">
+
+        </div>
+</div>
+
+
+
+
+
+<div class="accountPage">
+    <div id="accountForm" class="accountForm">
+        <div class="logInSignUp">
+            <p class="paraLogin">Log In</p>
+            <div>
+                <p class="signInPara1">Don't have an accont? Click </p> 
+                <strong id="link">&nbsp;here&nbsp;</strong>
+                 <p class="signInPara2"> to create one!</p>
+            </div>
+        </div>
+    <div id="signInForm">
+        <form class="signInForm">
+            <div>
+               <label for="firstName"><p class="paraInput">First Name</p></label>
+                <input class="signInput" id="firstName" type="text" required>
+                <div class="errorFirstName generalError"></div>
+            </div>
+            <div>
+                <label for="lastName"><p class="paraInput">Last  Name</p></label>
+                 <input class="signInput"  id="lastName" type="text" required>
+                 <div class="errorLastName generalError"></div>
+             </div>
+             <div>
+                <label for="email"><p class="paraInput">Email</p></label>
+                 <input class="signInput"  id="email" type="email" required>
+                 <div class="errorEmail generalError"></div>
+             </div>
+             <div>
+                <label for="verifyEmail"><p class="paraInput">Verify Email</p></label>
+                 <input class="signInput"  id="verifyEmail" type="email" required>
+                 <div class="errorVerifyEmail generalError"></div>
+             </div>
+             <div>
+                <label for="password"><p class="paraInput">Password</p></label>
+                 <input class="signInput"  id="password" type="password" required>
+                 <div class="errorPassword generalError"></div>
+             </div>
+             <div>
+                <label for="verifyPassword"><p class="paraInput">Verify Password </p></label>
+                 <input class="signInput" id="verifyPassword" type="password"  required>
+                 <div class="errorVerifyPassword generalError"></div>
+             </div>
+             <div class="submitButtonSignIn">
+                <button id="submitButtonSignIn" type="submit">Sign Up</button>
+             </div>
+        </form>
+    </div>
+
+        <form class="logInForm">
+             <div>
+                <label for="emailLogin"><p class="paraInput">Email</p></label>
+                 <input class="loginInput" id="emailLogin" type="email">
+                 <div class="errorEmailLogIn generalError"></div>
+             </div>
+            
+             <div>
+                <label for="passwordLogin"><p class="paraInput">Password</p></label>
+                 <input class="loginInput" id="passwordLogin" type="password">
+                 <div class="errorPasswordLogIn generalError"></div>
+             </div>
+            
+             <div class="submitButtonLogin">
+                <button class="loginButton" id="submitButtonLogin">Log In</button>
+             </div>
+        </form>
+
+        <div class="checkLogIn">
+                <div class="afterLoginMessage"></div>
+                <button class="signOutButton">Sign Out</button>
+        </div>
+    </div>
+</div>
+
+<div class="shopDiv">
+    <div class="shoppingCart">
+        <div class="shopListPrices">
+            <div class="shopGrid totalPrice">
+                <div>
+                    <p>Total:</p>
+                    <p class="totalDisplay">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="aboutUs">
+    <div class="about">
+        <div class="allAboutUs">
+            <div id="an">@eduardbede</div>
+            <a href="https://github.com/eduardbede">Visit GitHub</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

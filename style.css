@@ -1,0 +1,890 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e7e9ec;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+
+  /* aici trebuie pus display block */
+.sections{
+    display: block
+}
+/* aici trebuie pus display none */
+
+.phonePage{
+    display: none;
+}
+
+
+
+
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.accoutShop{
+    display: flex;
+}
+
+
+
+#homeButton:hover{
+    cursor: pointer;
+}
+
+
+.unu{
+   /* padding: 20vh 0 10vh; */
+   background-color: #e7e9ec;
+   gap: 31px;
+  /*  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));  */
+   display: flex;
+    flex-wrap: wrap;
+   justify-items: center;
+}
+
+.unu>:nth-child(1){
+    margin-top: 20px;
+    background: rgb(18,86,160);
+    background: linear-gradient(313deg, rgba(18,86,160,1) 0%, rgba(2,129,197,1) 67%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.unu>:nth-child(2){
+    margin-top: 20px;
+    background: rgb(105,33,186);
+    background: linear-gradient(313deg, rgba(105,33,186,1) 0%, rgba(174,50,219,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.unu>:nth-child(3){
+    margin-top: 20px;
+    background: rgb(52,141,172);
+    background: linear-gradient(313deg, rgba(52,141,172,1) 0%, rgba(49,201,205,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.unu>:nth-child(4){
+    margin-top: 20px;
+    background: rgb(231,46,124);
+    background: linear-gradient(313deg, rgba(231,46,124,1) 0%, rgba(250,98,105,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.unu>:nth-child(5){
+    margin-top: 20px;
+    background: rgb(255,99,98);
+    background: linear-gradient(313deg, rgba(255,99,98,1) 0%, rgba(255,149,101,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.unu>:nth-child(6){
+    margin-top: 20px;
+    background: rgb(255,133,11);
+    background: linear-gradient(313deg, rgba(255,133,11,1) 0%, rgba(255,197,53,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.unu>:nth-child(1) > p,
+.unu>:nth-child(3) > p,
+.unu>:nth-child(4) > p,
+.unu>:nth-child(5) > p,
+.unu>:nth-child(6) > p
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    color: white;
+}
+
+.unu>:nth-child(2) > p{
+    font-family: 'Poppins', sans-serif;
+    font-size:13px;
+    color: white;
+    padding: 0px 19px;
+    text-align: center;
+}
+
+
+.infoDiv{
+    display: flex;
+    justify-content: center;
+    background-color: #e7e9ec;
+    text-align: center;
+}
+.infoDiv>a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 3vh;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+.doi,
+.trei,
+.patru,
+.cinci{
+    padding: 3%;
+    background-color: #e7e9ec;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 0fr 1fr;
+ }
+
+
+
+.doi>p{
+    /* display: flex;
+    height: 39vh; */
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    font-size: 2.3vh;;
+}
+.trei>p,
+.patru>p,
+.cinci>p{
+    /* display: flex;
+    height: 39vh; */
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    font-size: 2.3vh;
+}
+
+.middleDiv>img,
+.middleDiv3>img{
+    height: 36vh;
+ }
+
+ .middleDiv1>img{
+    height: 25vh;
+ }
+ .middleDiv2>img{
+    height: 30vh;
+ }
+
+.middleDiv,
+.middleDiv1,
+.middleDiv2,
+.middleDiv3{
+    border-radius: 50%;
+    background-color: white;
+    height: 40vh;
+    width: 40vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.middleDiv{
+    background: rgb(231,47,123);
+    background: linear-gradient(313deg, rgba(231,47,123,1) 0%, rgba(250,99,105,1) 100%);
+}
+.middleDiv1{
+    background: rgb(53,137,170);
+    background: linear-gradient(313deg, rgba(53,137,170,1) 0%, rgba(48,206,207,1) 100%);
+}
+.middleDiv2{
+    background: rgb(104,32,186);
+    background: linear-gradient(313deg, rgba(104,32,186,1) 0%, rgba(177,50,220,1) 100%);
+}
+.middleDiv3{
+    background: rgb(255,131,10);
+    background: linear-gradient(313deg, rgba(255,131,10,1) 0%, rgba(255,200,55,1) 100%);
+}
+
+
+.fistDiv{
+    background-color: white;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.buton{
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+.listaButoane{
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    font-size: larger;
+    gap: 4vh;
+}
+.listaButoane>li:hover{
+    transform: translateY(-10px);
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.listaButoane>li:hover {
+    color: #e2725a;
+}
+
+.listaButoane>li{
+    display: flex;
+    align-items: center;
+}
+
+.listaButoane>li> {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: 6vh;
+    text-decoration: none;
+    color: inherit;
+}
+
+.listaButoane>:nth-child(3)>i{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #001220;
+    color: white;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+
+
+.titleImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.titleImg>:nth-child(1){
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+.titleImg p{
+    font-size: x-large;
+    font-weight: bold;
+}
+.titleImg>:nth-child(1) > p > a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.sections>:nth-child(3){
+    height: 80vh;
+}
+
+
+
+.phoneBrands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   /*  padding-top: 20vh;
+    padding-bottom: 10vh; */
+    margin: 0vh 8vh;
+    gap: 60px;
+    
+}
+
+.phoneBrandsGrid{
+    display: grid;
+    border: 1px solid;
+    width: 22vh;
+    height: 34vh;
+    font-family: 'Poppins', sans-serif;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    justify-items: center;
+    background-color: honeydew;
+}
+.phoneBrands>:nth-child(3)>img{
+    height: 20px;
+}
+
+.phoneBrandsGrid:active{
+    background-color: #FFC837;
+}
+
+
+
+.phoneDivs{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10vh;
+    /* margin: 0vh 8vh; */
+    margin-bottom: 6vh;
+    gap: 60px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+.phonePage{
+    margin-top: 15vh;
+}
+.phoneGrid{
+    /* border: 1px solid; */
+    width: 21vh;
+    height: 40vh;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-evenly;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.phoneGrid>img{
+    height: 15vh;
+    width: fit-content;
+}
+.phoneGrid>p{
+    margin: 0;
+}
+
+.priceDiv{
+    display: flex;
+    align-items: center
+}
+
+
+
+/* display block */
+.accountPage{
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#link:hover{
+    cursor: pointer;
+}
+#link:active{
+    color: #FFC837;
+}
+
+#linkLogIn:hover{
+    cursor: pointer;
+}
+
+#linkLogIn:active{
+    color: #FFC837;
+}
+
+
+.logInSignUp{
+    padding-top: 27vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.accountForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.accountForm>p{
+    margin-bottom: 0;
+}
+
+/* aici trebuie display grid */
+.signInForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   /*  gap: 20px; */
+    padding: 20px;
+    background: white;
+    border-radius: 35px;
+}
+#signInForm{
+    display: none;
+}
+.signInput{
+    border-radius: 10px;
+    height: 2em;
+    width: 28em;
+    margin-right: 1vh;
+}
+.loginInput{
+    border-radius: 10px;
+    height: 2.5em;
+    width: 30rem;
+    font-family: 'Poppins', sans-serif;
+}
+/* aici trebuie display block */
+.logInForm{
+    display: block;
+    padding: 20px;
+    background: white;
+    border-radius: 35px;
+}
+.paraInput{
+    margin: 0;
+}
+.submitButton{
+    padding-top: 2vh;
+    text-align: center;
+    grid-column: 1/ span 2;
+}
+.submitButtonLogin{
+    padding-top: 2vh;
+    text-align: center;
+    grid-column: 1/ span 2;
+}
+.submitButtonSignIn{
+    padding-top: 2vh;
+    text-align: center;
+    grid-column: 1/ span 2;
+}
+
+#submitInput{
+    width: 10vh;
+    height: 4vh;
+}
+
+.logInSignUp>:nth-child(2){
+    text-align: center;
+    padding: 0px 11vh;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+.logInForm:nth-child(2)>input,
+.logInForm:nth-child(3)>input{
+    margin-right: 0px;
+} 
+
+
+
+#submitButtonSignIn,
+#submitButtonLogin{
+    cursor: pointer;
+}
+
+
+
+
+#submitButtonSignIn:active,
+#submitButtonLogin:active{
+    color: #FFC837;
+}
+
+.generalError{
+    height: 2vh;
+    font-size: 1.2vh;
+    display: flex;
+    align-items: center;
+}
+
+.accountStatus{
+    padding-top: 10px;
+    font-size: 1.4vh;
+    font-family: 'Poppins', sans-serif;
+    height: 2vh;
+}
+
+.checkLogIn{
+    display: none;
+    gap: 33px;
+    display: block;
+    padding-top: 40vh;
+    flex-direction: column;
+    font-size: 3vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* display grid aici */
+.shoppingCart{
+    display: grid;
+    justify-items: center;
+    margin-top: 14vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+}
+
+.shopList{
+    height: 15vh;
+    width: 60vw;
+    border: 1px solid black;
+    display: grid;;
+    background-color:cornsilk
+}
+
+.shopListPrices{
+    height: 7vh;
+    width: 60vw;
+    border: 1px solid black;
+    display: grid;
+    background-color: cornsilk;
+}
+
+.shopGrid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.shopGrid>img{
+    height: 13vh;
+    
+}
+
+.shopDiv{
+    display: none;
+}
+
+.totalPrice{
+    justify-content: flex-end;
+    padding-right: 10vh;
+}
+
+.totalPrice>:nth-child(1){
+    display: flex;
+    gap: 33px;
+}
+
+.pricesDivs{
+    display: flex;
+}
+.deleteItem{
+    background: #bc3315;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+}
+
+
+.shoppingButton {
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Poppins', sans-serif;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.shoppingButton:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.shoppingButton:active {
+	position:relative;
+	top:1px;
+}
+
+.signOutButton {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.signOutButton:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.signOutButton:active {
+	position:relative;
+	top:1px;
+}
+
+.loginButton {
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+.loginButton:hover {
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
+.loginButton:active {
+	position:relative;
+	top:1px;
+}
+
+#submitButtonSignIn {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+#submitButtonSignIn:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+#submitButtonSignIn:active {
+	position:relative;
+	top:1px;
+}
+
+.about{
+    margin-top: 41vh;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUs{
+    display: none;
+}
+
+.allAboutUs{
+    height: 9rem;
+    width: 57rem;
+}
+
+.allAboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+    letter-spacing: 0.6px;
+    word-spacing: 0.8px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+  }
+  #an {
+    margin-right: 10px;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  
+
+
+/* media querry */
+
+@media (max-width: 768px) { 
+    .menu-toggle{
+        justify-content: center;
+    }
+    .listaButoane{
+        display: block;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    .listaButoane> li{
+        border-bottom: 1px solid;
+        height: 6vh;
+        display: flex;
+        justify-content: center;
+        font-size: 2.5vh;
+    }
+    .listaButoane> :nth-child(4){
+        padding-bottom: 10px;
+    }
+    .listaButoane> li:hover{
+        transform: none;
+    }
+    
+    .buton{
+        display: flex;
+
+    }
+
+    .titleImg{
+        justify-content: space-between;
+    }
+    .titleImg p {
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    nav{
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        display: block;
+       /*  padding-bottom: 30px; */
+    }
+    
+    .listaButoane> li> a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vh;
+        height: 8vh;
+        text-decoration: none;
+        color: inherit;
+    }
+    .unu{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding: 6vh 0 1vh;
+    }
+    .sections> :nth-child(3) {
+        height: 90vh;
+        padding-top: 13vh;
+    }
+    .doi,
+    .trei,
+    .patru,
+    .cinci {
+        grid-template-columns: 1fr;
+        padding-bottom: 12vh;
+    }
+    .doi> p {
+       /*  height: 30vh; */
+        width: 80%;
+        margin: 10%;
+        margin-bottom: 25%;
+    }
+    .trei> p,
+    .patru> p,
+    .cinci>p{
+        margin-left: 1px;
+       }
+
+       .phoneBrands {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       /*  padding-top: 10vh;
+        padding-bottom: 10vh; */
+        margin: 1vh;
+        gap: 5px;
+    }
+    .phoneBrandsGrid {
+        width: 19vh;
+        height: 28vh;
+    }
+    .phoneGrid{
+        height: 33vh;
+        width: 20vh;
+    }
+    .phoneDivs{
+        padding-top: 10vh;
+        margin: 0vh 1vh;
+        margin-bottom: 6vh;
+        gap: 15px;
+        justify-items: center;
+    }
+    .accountForm {
+        padding-bottom: 20px;
+    }
+    /* aici trebuie display flex */
+    .signInForm{
+        display: flex;
+        flex-direction: column;
+        gap:0;
+    }
+    .signInput{
+        margin-right: 0;
+        height: 2em;
+        width: 23em;
+    }
+    .logInSignUp {
+        padding-top: 6vh;
+    }
+    .logInSignUp>:nth-child(2) {
+        flex-direction: column;
+        height: 20vh;
+    }
+    .shopGrid>img {
+        height: 10vh;
+    }
+    .shopList {
+        height: 15vh;
+        width: 92vw;
+        border: 1px solid black;
+        display: grid;
+        font-size: 1.5vh;
+    }
+    .shopGrid {
+        gap: 16px;
+        padding: 0 10px;
+    }
+    .totalPrice {
+        justify-content: center;
+        padding-right: 0;
+    }
+    .loginInput {
+        border-radius: 10px;
+        height: 2em;
+        width: 23em;
+    }
+ }
