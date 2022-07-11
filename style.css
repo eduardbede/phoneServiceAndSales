@@ -21,8 +21,62 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+#shoppingCount{
+    font-size: 1.7vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.accountShop{
+    display: flex;
+    align-items: center;
+}
+.fa-shopping-cart{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
 
+.accoutShop{
+    display: flex;
+}
+
+#accountButton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 7vh;
+}
+
+.menu-toggle{
+   display: flex;
+}
+
+
+.menuButtonsAccount{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+}
+
+
+#accountButton:hover,
+#shoppingButton:hover{
+    transform: translateY(-10px);
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+#accountButton:hover,
+#shoppingButton:hover {
+    color: #e2725a;
+}
+
+#menu-button:hover{
+    cursor: pointer;
+}
 
 
 section{
@@ -32,10 +86,11 @@ section{
     height: 80vh;
 }
 
-.accoutShop{
+#shoppingButton{
     display: flex;
+    gap: 10px;
+    height: 7vh;
 }
-
 
 
 #homeButton:hover{
@@ -236,11 +291,14 @@ section{
 }
 
 .listaButoane{
+    font-family: 'Poppins', sans-serif;
     list-style: none;
     display: flex;
-    font-weight: bold;
-    font-size: larger;
+    font-size: 2vh;
     gap: 4vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 30px;
 }
 .listaButoane>li:hover{
     transform: translateY(-10px);
@@ -273,12 +331,15 @@ section{
     align-content: center;
     gap: 10px;
     justify-content: center;
+    
 }
 
 
 
 nav{
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 5fr 2fr;
     justify-content: space-around;
     background-color: #001220;
     color: white;
@@ -290,20 +351,26 @@ nav{
 
 
 
+
+
+
 .titleImg{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 30px;
+    font-family: 'Poppins', sans-serif;
 }
 .titleImg>:nth-child(1){
     display: flex;
     justify-items: center;
     align-items: center;
     gap: 10px;
+    padding-right: 20px;
 }
 .titleImg p{
-    font-size: x-large;
-    font-weight: bold;
+    font-size: 1.5vh;
+    
 }
 .titleImg>:nth-child(1) > p > a{
     color: inherit;
@@ -738,13 +805,28 @@ nav{
 /* media querry */
 
 @media (max-width: 768px) { 
+    .menuButtonsAccount{
+        font-size: 1.5vh;
+        gap: 10px;
+    }
     .menu-toggle{
         justify-content: center;
     }
+    #shoppingCount{
+        font-size: 1.5vh;
+    }
+
+    .buton {
+    display: none;
+    width: 30px;
+    height: 36px;
+    }
+
     .listaButoane{
         display: block;
         margin-bottom: 0;
         padding-left: 0;
+        width: 60vw
     }
     .listaButoane> li{
         border-bottom: 1px solid;
@@ -767,10 +849,10 @@ nav{
 
     .titleImg{
         justify-content: space-between;
+        padding-left: 0;
     }
     .titleImg p {
-        font-size: large;
-        font-weight: bold;
+        font-size: 1.3vh;
         text-align: center;
     }
 
@@ -888,3 +970,49 @@ nav{
         width: 23em;
     }
  }
+
+ /* media querry pentru landscape */
+	
+
+ @media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    .menuButtonsAccount,
+    .listaButoane,
+    #shoppingCount {
+        font-size: 4vh;
+    }
+    #homeButton>:nth-child(2){
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 4vh;
+    }
+    .unu {
+        padding: 6vh 0 19vh;
+    }
+    .infoDiv>a {
+        font-size: 6vh;
+    }
+    .doi>p, 
+    .trei>p, 
+    .patru>p, 
+    .cinci>p {
+   
+        font-size: 4vh;
+    }
+    .phoneBrandsGrid {
+        font-size: 4vh;
+    }
+    .phoneBrands>:nth-child(5)>img {
+        height: 30px;
+    }
+    .phoneGrid {
+        width: 31vh;
+        height: 75vh;
+    }
+    .shopListPrices {
+        height: 10vh;
+    }
+    .shoppingCart {
+        font-size: 3vh;
+    }
+   
+  }

@@ -3,14 +3,10 @@ const phones = [];
 let users = JSON.parse(localStorage.getItem('users'))
 let addPhones = [];
 
-console.log(users)
+
   if(users === null){
     users = []
 }  
-
-
-
-console.log(users)
 
 const menu = document.querySelector("#menu-button");
 const menuToggle = document.querySelector(".menu-toggle");
@@ -170,7 +166,7 @@ $("#salesButton").click(function(){
     const afterLoginMessage = document.querySelector('.afterLoginMessage');
     const signOutButton = document.querySelector('.signOutButton');
     /* const accountStatus = document.querySelector('.accountStatus'); */
-    const shoppingCount = document.querySelector('.shoppingCount');
+    const shoppingCount = document.querySelector('#shoppingCount');
     const totalDisplay = document.querySelector('.totalDisplay');
 
     if(users.map(e =>{return e.login}).indexOf(true) !== -1){
@@ -814,7 +810,7 @@ function delAll(data){
 
 //fuctie care updateaza cate produse avem in cos
 function cartNumber(){
-    const shoppingCount = document.querySelector('.shoppingCount');
+    const shoppingCount = document.querySelector('#shoppingCount');
     if(users[users.map(e =>{return e.login}).indexOf(true)] === undefined){
         return
     }
