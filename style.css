@@ -804,7 +804,18 @@ nav{
 
 /* media querry */
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
+
+    #accountButton:hover,
+    #shoppingButton:hover{
+    transform: none;
+    color: white;
+    }
+    #accountButton:active,
+    #shoppingButton:active{
+       color: #e2725a;
+    }
+
     .menuButtonsAccount{
         font-size: 1.5vh;
         gap: 10px;
@@ -975,6 +986,17 @@ nav{
 	
 
  @media only screen and (max-height: 575.98px) and (orientation: landscape) {
+
+    #accountButton:hover,
+    #shoppingButton:hover{
+    transform: none;
+    color: white;
+    }
+    #accountButton:active,
+    #shoppingButton:active{
+       color: #e2725a;
+    }
+
     .menuButtonsAccount,
     .listaButoane,
     #shoppingCount {
