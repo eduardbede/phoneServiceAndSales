@@ -465,6 +465,11 @@ nav{
     display: none;
     font-family: 'Poppins', sans-serif;
 }
+#link{
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: #0688fa;
+}
 
 #link:hover{
     cursor: pointer;
