@@ -24,6 +24,8 @@ body::-webkit-scrollbar {
 #shoppingCount{
     font-size: 1.7vh;
     font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .accountShop{
