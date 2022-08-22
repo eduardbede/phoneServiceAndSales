@@ -263,7 +263,6 @@ const brands =() =>{
            return res.json()
         })
         .then(data =>{
-            console.log(data.data)
             phones.push(data.data[5], data.data[71], data.data[72], data.data[39], data.data[87], data.data[113])
             addTo();
             phones.forEach(el =>{
