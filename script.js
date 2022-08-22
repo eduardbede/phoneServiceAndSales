@@ -236,10 +236,6 @@ $("#link").click(function(){
 hereButton()
 
 
-
-
-
-
 document.querySelector("#submitButtonSignIn").addEventListener("click", function(event){
     event.preventDefault()
   });
@@ -267,7 +263,8 @@ const brands =() =>{
            return res.json()
         })
         .then(data =>{
-            phones.push(data.data[5], data.data[70], data.data[71], data.data[38], data.data[86], data.data[112])
+            console.log(data.data)
+            phones.push(data.data[5], data.data[71], data.data[72], data.data[39], data.data[87], data.data[113])
             addTo();
             phones.forEach(el =>{
                 const div = document.createElement("div");
